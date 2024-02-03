@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-commerce Website</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+       display: flex;
+      justify-content: space-around; /* Reorganized nav bar */
+    
+    }
+    
+    /* Navigation styles */
+    nav {
+      background-color: #555;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    
+    /* Page styles */
+    .page {
+      padding: 20px;
+    }
+    
+    /* Image styles */
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .image-container img {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    /* Animation styles */
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-50%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .animated {
+      animation: slideIn 1s ease-in-out;
+    }
+    
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+         margin: 0 auto;
+    }
+
+    #loginForm label {
+      margin-bottom: 8px;
+    }
+
+    #loginForm input {
+      padding: 8px;
+      margin-bottom: 12px;
+    }
+
+    #loginForm button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #signupButton {
+      background-color: #3498db;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>E-commerce Website</h1>
+  </header>
+  <nav>
+    <a href="#ladies.html">Ladies</a>
+    <a href="#gents.html">Gents</a>
+    <a href="#kids.html">Kids</a>
+    <a href="#jewelry.html">Jewelry</a>
+    <a href="#toys.html">Toys</a>
+    <a href="#accessories.html">Accessories</a>
+  </nav>
+  
+  <div class="page">
+    <h2>Ladies Clothes</h2>
+    <div class="image-container">
+         
+     <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="ladies1.jpg" alt="Ladies Image 1">
+          <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="ladies2.jpg" alt="Ladies Image 2">
+          <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="ladies3.jpg" alt="Ladies Image 3">
+        
+     <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="ladies4.jpg" alt="Ladies Image 4">
+          <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="ladies5.jpg" alt="Ladies Image 5">
+    </div>
+  </div>
+  
+  <div class="page">
+    <h2>Jewelry</h2>
+    <div class="image-container">
+           <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+     
+      <img src="jewelry1.jpg" alt="Jewelry Image 1">
+          <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="jewelry2.png" alt="Jewelry Image 2">
+          <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="jewelry3.jpg" alt="Jewelry Image 3">
+         <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="jewelry4.jpg" alt="Jewelry Image 4">
+           <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="jewelry5.png" alt="Jewelry Image 5">
+    </div>
+  </div>
+  
+  <div class="page">
+    <h2>Toys</h2>
+    <div class="image-container">
+           <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+     
+      <img src="toys1.jpg" alt="Toys Image 1">
+          <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="toys2.jpg" alt="Toys Image 2">
+        <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="toys3.jpg" alt="Toys Image 3">
+         <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="toys4.jpg" alt="Toys Image 4">
+         <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="toys5.jpg" alt="Toys Image 5">
+    </div>
+  </div>
+  
+  <div class="page">
+    <h2>Accessories</h2>
+    <div class="image-container">
+         
+     <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="mobile1.jpg" alt="Mobile Phone 1">
+          <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="mobile2.jpg" alt="Mobile Phone 2">
+          <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="mobile3.jpg" alt="Mobile Phone 3">
+           <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="appliance1.jpg" alt="Home Appliance 1">
+          <button class="add-to-cart" onclick="addToCart('mobile1', 'Mobile Phone 1')">Add to Cart</button>
+      <img src="appliance2.jpg" alt="Home Appliance 2">
+    </div>
+  </div>
+
+ 
+    <div class="page">
+    <h2>Search Products</h2>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="searchProducts()">Search</button>
+  </div>
+
+  <div class="page">
+   
+    </div>
+  </div>
+
+  <div class="page">
+    <h2>Login/Sign Up</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+      <button id="signupButton" onclick="showSignUpForm()">Sign Up</button>
+      
+    <p>If you have any questions, feel free to contact us:</p>
+    <p>Email: info@abcdsfgi.com</p>
+    <p>Phone: 123-456-7890</p>
+    </form>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 E-commerce Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+  
+    const imageContainers = document.querySelectorAll('.image-container');
+    imageContainers.forEach(container => {
+      container.classList.add('animated');
+    });
+
+    function addToCart(item) {
+      alert('Added to cart: ' + item);
+    }
+
+    function searchProducts() {
+      var input, filter, container, images, txtValue;
+      input = document.getElementById('searchInput');
+      filter = input.value.toUpperCase();
+      container = document.querySelectorAll('.image-container');
+      container.forEach(function (c) {
+        images = c.querySelectorAll('img');
+        images.forEach(function (img) {
+          txtValue = img.alt;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            c.style.display = "";
+          } else {
+            c.style.display = "none";
+          }
+        });
+      });
+    }
+
+    function showSignUpForm() {
+      alert("Redirecting to Sign Up page or displaying Sign Up form.");
+    
+    }
+  
+  </script>
+</body>
+      </html>
